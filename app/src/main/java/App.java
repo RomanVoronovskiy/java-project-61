@@ -24,14 +24,6 @@ public class App {
                 """);
         int n = scanner.nextInt();
         scanner.nextLine();
-//
-//
-//        System.out.print("""
-//                Welcome to the Brain Games!
-//                May I have your name?
-//                """);
-//        String name = scanner.nextLine();
-//        System.out.printf("Hello, %s! \n", name);
 
         switch (n) {
             case 1:
