@@ -1,7 +1,8 @@
 package hexlet.util;
 
-import java.util.Scanner;
 import hexlet.code.Engine;
+
+import java.util.Scanner;
 
 public class Cli {
     public static void welcomeUser() {

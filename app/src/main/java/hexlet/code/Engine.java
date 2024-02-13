@@ -24,10 +24,10 @@ public class Engine {
             String[] parts = questionAndAnswer.split("/");
 
             StringBuilder question = new StringBuilder();
-            for (int j = 0; j < parts.length-1; j++) {
+            for (int j = 0; j < parts.length - 1; j++) {
                 question.append(parts[j]);
             }
-            String correctAnswer = parts[parts.length-1];
+            String correctAnswer = parts[parts.length - 1];
 
             System.out.println("Question: " + question);
             String userAnswer = Utils.askForAnswer();

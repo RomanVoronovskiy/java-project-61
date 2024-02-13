@@ -14,7 +14,7 @@ public class Even {
     private static String generateQuestionAndAnswer() {
         int question = Utils.getRandomNumber();
         String correctAnswer = (question % 2 == 0) ? "yes" : "no";
-        return question +"/"+ correctAnswer;
+        return question + "/" + correctAnswer;
     }
 
 }
