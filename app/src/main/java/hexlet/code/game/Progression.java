@@ -25,7 +25,7 @@ public class Progression {
             if (i == hiddenIndex) {
                 question.append(".. ");
             } else {
-                question.append(" ").append(correctAnswer).append(" ");
+                question.append(correctAnswer).append(" ");
             }
             correctAnswer += difference;
         }
