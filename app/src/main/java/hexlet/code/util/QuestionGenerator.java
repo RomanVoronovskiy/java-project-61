@@ -1,4 +1,4 @@
-package hexlet.util;
+package hexlet.code.util;
 
 @FunctionalInterface
 public interface QuestionGenerator {

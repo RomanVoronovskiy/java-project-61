@@ -1,8 +1,8 @@
 package hexlet.code;
 
-import hexlet.util.Cli;
-import hexlet.util.QuestionGenerator;
-import hexlet.util.Utils;
+import hexlet.code.util.Cli;
+import hexlet.code.util.QuestionGenerator;
+import hexlet.code.util.Utils;
 
 public class Engine {
 

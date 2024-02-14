@@ -1,10 +1,12 @@
-import hexlet.game.Calc;
-import hexlet.game.Even;
-import hexlet.game.Exit;
-import hexlet.game.GCD;
-import hexlet.game.Prime;
-import hexlet.game.Progression;
-import hexlet.util.Cli;
+package hexlet.code;
+
+import hexlet.code.game.Calc;
+import hexlet.code.game.Even;
+import hexlet.code.game.Exit;
+import hexlet.code.game.GCD;
+import hexlet.code.game.Prime;
+import hexlet.code.game.Progression;
+import hexlet.code.util.Cli;
 
 import java.util.Scanner;
 

@@ -1,7 +1,7 @@
-package hexlet.game;
+package hexlet.code.game;
 
 import hexlet.code.Engine;
-import hexlet.util.Utils;
+import hexlet.code.util.Utils;
 
 public class Prime {
     private static final String GAME_DESCRIPTION = "Answer 'yes' if given number is prime. Otherwise answer 'no'.";
