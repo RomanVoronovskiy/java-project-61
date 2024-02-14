@@ -11,8 +11,11 @@ public class Progression {
     private static final Integer TEN = 10;
     private static final Integer TWENTY = 20;
 
-    public void run() {
-        Engine.startGame(GAME_DESCRIPTION, Progression::generateQuestionAndAnswer);
+    public static void run() {
+        Engine.startGame(
+                GAME_DESCRIPTION,
+                Progression::generateQuestionAndAnswer
+        );
     }
 
     private static String generateQuestionAndAnswer() {

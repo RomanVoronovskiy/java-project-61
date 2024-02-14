@@ -6,8 +6,11 @@ import hexlet.code.util.Utils;
 public class Prime {
     private static final String GAME_DESCRIPTION = "Answer 'yes' if given number is prime. Otherwise answer 'no'.";
 
-    public void run() {
-        Engine.startGame(GAME_DESCRIPTION, Prime::generateQuestionAndAnswer);
+    public static void run() {
+        Engine.startGame(
+                GAME_DESCRIPTION,
+                Prime::generateQuestionAndAnswer
+        );
     }
 
 

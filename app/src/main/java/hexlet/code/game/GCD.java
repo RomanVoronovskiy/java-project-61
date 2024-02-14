@@ -6,8 +6,11 @@ import hexlet.code.util.Utils;
 public class GCD {
     private static final String GAME_DESCRIPTION = "Find the greatest common divisor of given numbers.";
 
-    public void run() {
-        Engine.startGame(GAME_DESCRIPTION, GCD::generateQuestionAndAnswer);
+    public static void run() {
+        Engine.startGame(
+                GAME_DESCRIPTION,
+                GCD::generateQuestionAndAnswer
+        );
     }
 
     private static String generateQuestionAndAnswer() {

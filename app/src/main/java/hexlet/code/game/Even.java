@@ -7,7 +7,10 @@ public class Even {
     private static final String GAME_DESCRIPTION = "Answer 'yes' if the number is even, otherwise answer 'no'.";
 
     public static void run() {
-        Engine.startGame(GAME_DESCRIPTION, Even::generateQuestionAndAnswer);
+        Engine.startGame(
+                GAME_DESCRIPTION,
+                Even::generateQuestionAndAnswer
+        );
     }
 
 

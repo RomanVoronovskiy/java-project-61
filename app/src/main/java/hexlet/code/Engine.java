@@ -46,7 +46,7 @@ public class Engine {
         System.out.printf("Congratulations, %s!", userName);
     }
 
-    public static void setUserName(String userName) {
-        Engine.userName = userName;
+    public static void setUserName(String name) {
+        Engine.userName = name;
     }
 }
