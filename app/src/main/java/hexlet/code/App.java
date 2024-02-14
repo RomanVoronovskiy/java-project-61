@@ -24,29 +24,28 @@ public class App {
                 0 - Exit
                 Your choice:
                 """);
-        int n = scanner.nextInt();
-        scanner.nextLine();
+        String n = scanner.nextLine();
 
         switch (n) {
-            case 1:
+            case "1":
                 Cli.welcomeUser();
                 break;
-            case 2:
+            case "2":
                 Even.run();
                 break;
-            case 3:
+            case "3":
                 Calc.run();
                 break;
-            case 4:
+            case "4":
                 new GCD().run();
                 break;
-            case 5:
+            case "5":
                 new Progression().run();
                 break;
-            case 6:
+            case "6":
                 new Prime().run();
                 break;
-            case 0:
+            case "0":
                 new Exit().run();
                 break;
             default:
