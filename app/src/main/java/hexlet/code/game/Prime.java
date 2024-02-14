@@ -14,7 +14,7 @@ public class Prime {
     public static String generateQuestionAndAnswer() {
         int number = Utils.getRandomNumber();
 
-        String question = "Is " + number + " a prime number?";
+        String question = String.valueOf(number);
         String correctAnswer = isPrime(number) ? "yes" : "no";
 
         return question + "/" + correctAnswer;
