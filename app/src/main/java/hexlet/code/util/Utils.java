@@ -7,9 +7,10 @@ public class Utils {
 
     private static final Random RANDOM = new Random();
     private static final Scanner SCANNER = new Scanner(System.in);
+    private static final Integer MAX = 100;
 
     public static int getRandomNumber() {
-        return RANDOM.nextInt(100) + 1;
+        return RANDOM.nextInt(MAX) + 1;
     }
 
     public static char getRandomOperator() {
