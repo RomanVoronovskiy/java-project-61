@@ -17,6 +17,7 @@ public class Calc {
     }
 
     /**
+     * @param maxTry количество попыток после которых пользователь побеждает
      * @return строка с вопросом
      * @apiNote метод возвращает вопрос для типа игры - калькулятор
      */
@@ -58,7 +59,7 @@ public class Calc {
      */
     public static char getRandomOperator() {
         char[] operators = {'+', '-', '*'};
-        int randomIndex = Utils.getRandomNumberInRange(operators.length-1);
+        int randomIndex = Utils.getRandomNumberInRange(operators.length - 1);
         return operators[randomIndex];
     }
 }

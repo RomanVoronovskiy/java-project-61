@@ -59,7 +59,8 @@ public class Progression {
      * @param difference        разность прогрессии
      * @apiNote метод генерирует прогрессию с пропущенным числоим
      */
-    private static void generateProgressive(int progressionLength, int hiddenIndex, StringBuilder question, int correctAnswer, int difference) {
+    private static void generateProgressive(int progressionLength, int hiddenIndex,
+                                            StringBuilder question, int correctAnswer, int difference) {
         for (int j = 0; j < progressionLength; j++) {
             if (j == hiddenIndex) {
                 question.append(".. ");
