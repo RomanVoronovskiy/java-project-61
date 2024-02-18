@@ -3,24 +3,28 @@ package hexlet.code.game;
 import hexlet.code.Engine;
 import hexlet.code.util.Utils;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Prime {
     private static final String GAME_DESCRIPTION = "Answer 'yes' if given number is prime. Otherwise answer 'no'.";
 
     public static void run() {
         Engine.startGame(
                 GAME_DESCRIPTION,
-                Prime::generateQuestionAndAnswer
+                generateQuestionAndAnswer(Engine.ROUND_COUNT)
         );
     }
 
-
-    public static String generateQuestionAndAnswer() {
-        int number = Utils.getRandomNumber();
-
-        String question = String.valueOf(number);
-        String correctAnswer = isPrime(number) ? "yes" : "no";
-
-        return question + "/" + correctAnswer;
+    public static List<String> generateQuestionAndAnswer(int maxTry) {
+        List<String> data = new ArrayList<>();
+        for (int i = 0; i < maxTry; i++) {
+            int number = Utils.getRandomNumber();
+            String question = String.valueOf(number);
+            String correctAnswer = isPrime(number) ? "yes" : "no";
+            data.add(question + "/" + correctAnswer);
+        }
+        return data;
     }
 
     /**

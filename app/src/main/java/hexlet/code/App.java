@@ -24,9 +24,9 @@ public class App {
                 0 - Exit
                 Your choice:
                 """);
-        String n = scanner.nextLine();
+        String userChoices = scanner.nextLine();
 
-        switch (n) {
+        switch (userChoices) {
             case "1":
                 Cli.welcomeUser();
                 break;
@@ -37,16 +37,16 @@ public class App {
                 Calc.run();
                 break;
             case "4":
-                new GCD().run();
+                GCD.run();
                 break;
             case "5":
-                new Progression().run();
+                Progression.run();
                 break;
             case "6":
-                new Prime().run();
+                Prime.run();
                 break;
             case "0":
-                new Exit().run();
+                Exit.run();
                 break;
             default:
                 System.out.println("Incorrect input!");

@@ -1,7 +1,5 @@
 package hexlet.code.util;
 
-import hexlet.code.Engine;
-
 import java.util.Scanner;
 
 public class Cli {
@@ -14,6 +12,5 @@ public class Cli {
                 """);
         String name = scanner.nextLine();
         System.out.printf("Hello, %s! \n", name);
-        Engine.setUserName(name);
     }
 }
