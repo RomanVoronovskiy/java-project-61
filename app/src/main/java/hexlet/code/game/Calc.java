@@ -58,7 +58,7 @@ public class Calc {
      */
     public static char getRandomOperator() {
         char[] operators = {'+', '-', '*'};
-        int randomIndex = Utils.getRandomNumberInRange(operators.length);
+        int randomIndex = Utils.getRandomNumberInRange(operators.length-1);
         return operators[randomIndex];
     }
 }
