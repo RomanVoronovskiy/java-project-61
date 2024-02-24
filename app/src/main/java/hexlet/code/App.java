@@ -1,11 +1,6 @@
 package hexlet.code;
 
-import hexlet.code.game.Calc;
-import hexlet.code.game.Even;
-import hexlet.code.game.Exit;
-import hexlet.code.game.GCD;
-import hexlet.code.game.Prime;
-import hexlet.code.game.Progression;
+import hexlet.code.game.*;
 import hexlet.code.util.Cli;
 
 import java.util.Scanner;
@@ -46,7 +41,7 @@ public class App {
                 Prime.run();
                 break;
             case "0":
-                Exit.run();
+                System.out.println("Success Exit");
                 break;
             default:
                 System.out.println("Incorrect input!");

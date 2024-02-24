@@ -3,9 +3,6 @@ package hexlet.code.game;
 import hexlet.code.Engine;
 import hexlet.code.util.Utils;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class GCD {
     private static final String GAME_DESCRIPTION = "Find the greatest common divisor of given numbers.";
 
@@ -16,13 +13,13 @@ public class GCD {
         );
     }
 
-    private static List<String> generateQuestionAndAnswer(int maxTry) {
-        List<String> data = new ArrayList<>();
+    private static String[][] generateQuestionAndAnswer(int maxTry) {
+        String[][] data = new String[maxTry][];
         for (int i = 0; i < maxTry; i++) {
             int numberFirst = Utils.getRandomNumber();
             int numberSecond = Utils.getRandomNumber();
             int gcd = calculateGcd(numberFirst, numberSecond);
-            data.add(String.format("%d %d/%d", numberFirst, numberSecond, gcd));
+            data[i] = new String[]{String.format("%d %d", numberFirst, numberSecond), String.valueOf(gcd)};
         }
         return data;
     }

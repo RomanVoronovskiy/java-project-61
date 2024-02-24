@@ -3,9 +3,6 @@ package hexlet.code.game;
 import hexlet.code.Engine;
 import hexlet.code.util.Utils;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class Progression {
     private static final String GAME_DESCRIPTION = "What number is missing in the progression?";
     private static final Integer FIVE = 5;
@@ -21,8 +18,8 @@ public class Progression {
         );
     }
 
-    private static List<String> generateQuestionAndAnswer(int maxTry) {
-        List<String> data = new ArrayList<>();
+    private static String[][] generateQuestionAndAnswer(int maxTry) {
+        String[][] data = new String[maxTry][];
         for (int i = 0; i < maxTry; i++) {
             int progressionLength = Utils.getRandomNumberInRange(FIVE, TEN);
             int hiddenIndex = Utils.getRandomNumberInRange(ZERO, progressionLength - ONE);
@@ -33,8 +30,7 @@ public class Progression {
 
             generateProgressive(progressionLength, hiddenIndex, question, correctAnswer, difference);
             int answer = getAnswer(startNumber, difference, hiddenIndex);
-
-            data.add(question + "/" + answer);
+            data[i] = new String[]{String.valueOf(question), String.valueOf(answer)};
         }
         return data;
     }

@@ -3,9 +3,6 @@ package hexlet.code.game;
 import hexlet.code.Engine;
 import hexlet.code.util.Utils;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class Calc {
     private static final String GAME_DESCRIPTION = "What is the result of the expression?";
 
@@ -21,15 +18,15 @@ public class Calc {
      * @return строка с вопросом
      * @apiNote метод возвращает вопрос для типа игры - калькулятор
      */
-    private static List<String> generateQuestionAndAnswer(int maxTry) {
-        List<String> data = new ArrayList<>();
+    private static String[][] generateQuestionAndAnswer(int maxTry) {
+        String[][] data = new String[maxTry][];
         for (int i = 0; i < maxTry; i++) {
             int numberFirst = Utils.getRandomNumber();
             int numberSecond = Utils.getRandomNumber();
             char operator = getRandomOperator();
             String question = numberFirst + " " + operator + " " + numberSecond;
             int correctAnswer = calculateResult(numberFirst, numberSecond, operator);
-            data.add(question + "/" + correctAnswer);
+            data[i] = new String[]{question, String.valueOf(correctAnswer)};
         }
         return data;
     }

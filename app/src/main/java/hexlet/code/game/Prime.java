@@ -3,9 +3,6 @@ package hexlet.code.game;
 import hexlet.code.Engine;
 import hexlet.code.util.Utils;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class Prime {
     private static final String GAME_DESCRIPTION = "Answer 'yes' if given number is prime. Otherwise answer 'no'.";
 
@@ -16,13 +13,13 @@ public class Prime {
         );
     }
 
-    public static List<String> generateQuestionAndAnswer(int maxTry) {
-        List<String> data = new ArrayList<>();
+    public static String[][] generateQuestionAndAnswer(int maxTry) {
+        String[][] data = new String[maxTry][];
         for (int i = 0; i < maxTry; i++) {
             int number = Utils.getRandomNumber();
             String question = String.valueOf(number);
             String correctAnswer = isPrime(number) ? "yes" : "no";
-            data.add(question + "/" + correctAnswer);
+            data[i] = new String[]{question, correctAnswer};
         }
         return data;
     }
